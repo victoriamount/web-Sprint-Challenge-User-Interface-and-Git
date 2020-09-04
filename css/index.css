@@ -18,8 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-    /* border: 0; */
-    border: 1px solid gray;
+    border: 0;
+    /* border: 1px solid gray; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -82,16 +82,17 @@ header {
 }
 
 header nav {
-    display: inline-block;
-    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    width: 79%;
 }
 
 header a {
-    display: inline-block;
-    width: 19%;
     text-align: center;
     color: black;
 }
+
+/* PROVIDED CODE */
 
 .container {
     width: 800px;
