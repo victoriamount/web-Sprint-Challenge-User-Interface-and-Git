@@ -203,3 +203,42 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+#about {
+    padding: 3% 2%;
+    border-bottom: 1px dashed black;
+}
+
+#learnMoreTiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+.tile {
+    width: 46%;
+    margin: 3% 0;
+    border-bottom: 1px dashed black;
+}
+
+.tile h3 {
+    padding-top: 2%;
+}
+
+.tile button {
+    margin: 3% 0;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    padding: 2%;
+    width: 30%;
+}
+
+.tile img {
+    width: 100%;
+}
+
+#work {
+    padding: 3% 2%;
+}
