@@ -18,7 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    /* border: 0; */
+    border: 1px solid gray;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -66,6 +67,32 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 4% 0;
+}
+
+header nav {
+    display: inline-block;
+    width: 75%;
+}
+
+header a {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    color: black;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -110,6 +137,37 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#b1 {
+    background-color: teal;
+}
+#b2 {
+    background-color: gold;
+}
+#b3 {
+    background-color: cadetblue;
+}
+#b4 {
+    background-color: coral;
+}
+#b5 {
+    background-color: crimson;
+}
+#b6 {
+    background-color: forestgreen;
+}
+#b7 {
+    background-color: darkorchid;
+}
+#b8 {
+    background-color: hotpink;
+}
+#b9 {
+    background-color: indigo;
+}
+#b10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
