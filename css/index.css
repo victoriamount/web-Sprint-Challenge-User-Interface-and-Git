@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+
+/* RESET & SETUP */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,8 +73,16 @@ a {
     text-decoration: none;
 }
 
-/* HEADER STYLES */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
 
+/* end of reset & setup */
+
+
+
+/* HEADER STYLES */
 header {
     display: flex;
     flex-flow: row wrap;
@@ -80,7 +90,9 @@ header {
     align-items: flex-end;
     padding: 4% 0;
 }
-
+h1 {
+    display: none;  /* Added so that search engines and screen readers still have an h1 to read, even though the logo is serving as the site title for a user */
+}
 header nav {
     display: flex;
     justify-content: space-around;
@@ -91,19 +103,16 @@ header a {
     text-align: center;
     color: black;
 }
+/* end of header styles */
 
-/* PROVIDED CODE */
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
 
+/* HOME - ABOUT STYLES */
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -112,7 +121,11 @@ header a {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+/* end of home - about styles */
 
+
+
+/* HOME - BOXES STYLES */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -139,7 +152,7 @@ header a {
     align-items: center;
     justify-content: center;
 }
-
+/* COLOR BOXES */
 #b1 {
     background-color: teal;
 }
@@ -171,6 +184,11 @@ header a {
     background-color: dodgerblue;
 }
 
+/* end of home - boxes styles */
+
+
+
+/* HOME - 3 COLUMN INFO STYLES */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -184,7 +202,11 @@ header a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/* end of home - 3 column info styles */
 
+
+
+/* FOOTER STYLES */
 footer {
     width: 100%;
     background: black;
@@ -203,23 +225,31 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* end of footer styles */
 
+
+
+/* ABOUT - ABOUT STYLES */
 #about {
     padding: 3% 2%;
     border-bottom: 1px dashed black;
 }
+/* end of about - about styles */
 
+
+
+/* ABOUT - TILES STYLES */
 #learnMoreTiles {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
 }
 
 .tile {
     width: 46%;
     margin: 3% 0;
     border-bottom: 1px dashed black;
+    padding-bottom: 1%;
 }
 
 .tile h3 {
@@ -238,7 +268,13 @@ footer nav a {
 .tile img {
     width: 100%;
 }
+/* end of about - tiles styles */
 
+
+
+/* ABOUT - WORK TOGETHER STYLES */
 #work {
     padding: 3% 2%;
 }
+/* end of about - work together styles */
+
